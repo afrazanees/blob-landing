@@ -1,0 +1,43 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Smooth scrolling for the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure full-width sections */
+section {
+  width: 100%;
+}
+
+/* Hide scrollbar for cleaner look while maintaining functionality */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #f53003 #ffffff;
+}
+
+/* Selection color */
+::selection {
+  background-color: #fe97aa;
+  color: white;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #f53003;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
